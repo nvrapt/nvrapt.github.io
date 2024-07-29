@@ -1,0 +1,58 @@
+.graph-container {
+    width: 960px;
+    margin: auto;
+  }
+  
+  .controls-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .controls {
+    margin: 0 10px;
+  }
+  
+  .controls label,
+  .controls input {
+    margin: 0 5px;
+  }
+  
+  .axis text {
+    font-size: 12px;
+  }
+  
+  .axis text.rotate {
+    text-anchor: end;
+    transform: rotate(-45deg);
+  }
+  
+  .axis-label {
+    text-anchor: middle;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .bar {
+    fill: black;
+    transition: fill 0.1s;
+  }
+  
+  .bar:hover {
+    fill: red;
+  }
+  
+  .tooltip {
+    position: absolute;
+    text-align: left;
+    width: auto;
+    height: auto;
+    padding: 8px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
